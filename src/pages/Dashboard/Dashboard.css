@@ -1,0 +1,34 @@
+.dash__main {
+  width: 100%;
+}
+
+.desk {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .dash__side {
+    width: 10%;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .dash__widget {
+    width: 35%;
+    z-index: 10;
+  }
+
+  .dash__main {
+    width: 100%;
+  }
+}
