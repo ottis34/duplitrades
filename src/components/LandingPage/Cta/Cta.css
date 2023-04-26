@@ -1,0 +1,125 @@
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: inset 0 0 0 2000px rgba(0, 9, 58, 0.8);
+  background-image: url(../../../assets/landingPage/cta.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+#overlay {
+  background-color: rgba(0, 9, 58, 0.8);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 2rem;
+}
+
+.cta__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  width: 35%;
+}
+
+.cta__head h1 {
+  font-size: 30px;
+  width: 100%;
+  color: #fff;
+}
+
+.cta__head p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.cta__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cta__link p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cta__link hr {
+  width: 100%;
+  border: 0.1px dashed white;
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .cta__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cta__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cta__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+  }
+}

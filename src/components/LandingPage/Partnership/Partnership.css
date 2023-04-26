@@ -1,0 +1,163 @@
+.ps__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7rem 0;
+}
+
+.ps__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 3rem;
+}
+
+.ps__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.ps__head h2 {
+  font-size: 30px;
+  color: #00093a;
+}
+
+.ps__head p {
+  color: #00093a;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ps__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ps__body img {
+  width: 15rem;
+  cursor: pointer;
+}
+
+/*Filter styles*/
+/* .saturate {
+  filter: saturate(3);
+} */
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.grayscale:hover {
+  filter: grayscale(0);
+}
+/* .contrast {
+  filter: contrast(160%);
+}
+.brightness {
+  filter: brightness(0.25);
+}
+.blur {
+  filter: blur(3px);
+}
+.invert {
+  filter: invert(100%);
+}
+.sepia {
+  filter: sepia(100%);
+}
+.huerotate {
+  filter: hue-rotate(180deg);
+}
+.rss.opacity {
+  filter: opacity(50%);
+} */
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .ps__body img {
+    width: 12rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ps__body img {
+    width: 10rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ps__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .ps__head h2 {
+    font-size: 30px;
+    color: #00093a;
+  }
+
+  .ps__head p {
+    color: #00093a;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .ps__body img {
+    width: 8rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ps__body {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .ps__body img {
+    width: 10rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .ps__body {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .ps__body img {
+    width: 8rem;
+    cursor: pointer;
+  }
+}

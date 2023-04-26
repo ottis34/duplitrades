@@ -1,0 +1,241 @@
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center !important;
+  width: 100%;
+  background-color: #fff;
+  color: #ffffff;
+  padding: 1rem 0;
+  z-index: 0;
+}
+
+.nav__con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+
+  width: 100%;
+}
+
+.closed {
+  display: none;
+}
+
+.nav__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 90%;
+}
+
+.nav__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 2rem;
+}
+
+.nav__item {
+  cursor: pointer;
+}
+
+.lp__nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp__nav__logo img {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.nav__center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav__center > p {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.nav__center > img {
+  width: 60px;
+  height: auto;
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  gap: 100px;
+}
+
+.nav__right {
+  cursor: pointer;
+}
+
+.signup {
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid #c8d7ff;
+  padding: 8px 20px;
+}
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu__icon {
+  font-size: 35px;
+  color: #00093a;
+}
+
+.s__nav__items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s__nav__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #fff;
+  padding-top: 2rem;
+}
+
+.s__nav__content a {
+  text-decoration: none;
+  color: rgba(0, 9, 58, 0.5);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.s__nav__item {
+  padding: 20px 45px;
+}
+
+.nav__item {
+  padding: 0;
+  text-decoration: none;
+  color: rgba(0, 9, 58, 0.5);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.s__signup {
+  padding: 10px 12px;
+  background: #f0884d;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.active {
+  color: #404e9d;
+}
+
+.lp__auth__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 20px 45px;
+}
+
+.lp__auth__item1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.lp__nav__signup {
+  border: 1px solid #404e9d;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  background: #404e9d;
+  color: white;
+  cursor: pointer;
+}
+
+.lp__nav__signin {
+  border: 1px solid #404e9d;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  color: #404e9d;
+  cursor: pointer;
+}
+
+/* media query */
+
+/* @media screen and (min-width: 1400px) {
+    
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+} */
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  .nav__right {
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__left {
+    gap: 30px;
+  }
+  .nav__right {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}

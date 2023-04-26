@@ -1,0 +1,129 @@
+/* security page start */
+
+/* page container */
+.sec_con {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	width: 100%;
+}
+/* page container end */
+
+
+/* info/text section(left side) start */
+.sec_info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 65%;
+}
+
+/* text section start */
+.secure_text {
+	color: #555;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.auth_text {
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* text section end */
+
+/* button section start */
+
+/* button container start */
+.sec_btn_con {
+	display: flex;
+	flex-direction: row;
+	column-gap: 8px;
+	margin: 28px 0;
+}
+/* button container end */
+
+/* buttons style start */
+.sec_btn {
+	background-color: black;
+	color: white;
+	padding: 12px;
+	border-radius: 3px;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+}
+/* buttons style start */
+
+/* button section end */
+
+/* scan text style start */
+.scan_text {
+	border-top: 2px solid #dadada;
+	padding-top: 17px;
+	align-self: stretch;
+	text-align: center;
+	color: #555;
+	font-size: 16px;
+	font-weight: bold;
+}
+/* scan text style end */
+/* info/text section end */
+
+
+/* QR code component start */
+
+/* QR code component container start */
+.sec_qr_con {
+	width: 33%;
+	background-color: white;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 2px;
+    box-shadow: 0px 2px 5px #00000030;
+
+}
+/* QR code component container end */
+
+/* QR code section start */
+
+.qr_code {
+	max-width: 90%;
+	height: auto;
+
+}
+
+
+.sec_qr_con > input {
+	text-align: center;
+}
+
+.sec_qr_con > input[type="text"] {
+	letter-spacing: 15px;
+	margin-top: 12px;
+}
+
+.sec_qr_con > input[type="submit"] {
+	color: white;
+	background-color: #ff7700;
+	border-radius: 3px;
+	font-weight: 700;
+	font-size: 13px;
+	margin: 0;
+	cursor: pointer;
+	box-shadow: 0px 5px 15px 0px #ff770052;
+	padding: 16px;
+	border: none;
+}
+
+.sec_qr_con > input[type="submit"]:hover {
+	background: #fe8114;
+}
+/* QR code section end */
+/* QR code component end */
+
+/* security page end */

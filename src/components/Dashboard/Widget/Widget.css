@@ -1,0 +1,153 @@
+.widd {
+  width: 100%;
+}
+
+.conv__con {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.conv__head {
+  background: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.conv__body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 150px;
+}
+
+.conv__card {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px 10px;
+  justify-content: space-between;
+  background: #181f2c;
+  color: #f1f5f9;
+}
+
+.conv__icon {
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+}
+
+.conv__card :hover {
+  cursor: pointer;
+}
+
+.conv__selected {
+  background: #27a54e;
+  color: #f1f5f9;
+}
+
+.conv__left {
+  display: flex;
+  width: 50%;
+  gap: 5px;
+  align-items: center;
+}
+
+.conv__right {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.conv__right > input {
+  border: none;
+  font-size: 14px;
+  color: #f1f5f9;
+  outline: none;
+  background: transparent;
+  text-align: right;
+  border-bottom: 1px solid gray;
+}
+
+.watch__con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.watch__head {
+  width: 100%;
+  background: white;
+  padding: 10px 5px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch__head__gray {
+  background: lightgray;
+}
+
+.watch__head > p {
+  padding: 5px;
+}
+
+.watch__body {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.watch__title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.watch__row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.watch_col {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 950px) {
+  .conv__card {
+    display: flex;
+    overflow-y: auto;
+    width: 100%;
+    font-size: 10px;
+    padding: 1px 10px;
+  }
+
+  .conv__right > input {
+    border: none;
+    font-size: 10px;
+  }
+
+  .watch__title > p {
+    font-size: 14px;
+  }
+
+  .watch_col > p {
+    font-size: 12px;
+  }
+}

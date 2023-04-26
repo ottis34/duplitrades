@@ -1,0 +1,173 @@
+.deposit_section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 431px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.deposit_left {
+  width: 205px;
+  overflow-y: scroll;
+  min-width: 205px;
+  background-color: #ebedf1;
+}
+
+.currency_block {
+  color: #474d5ceb;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-bottom: 1px solid #262c3b;
+  border-left: 2px solid #262c3b;
+  border-color: #cccfd6;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.deposit_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  width: auto;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.dep_right_text {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #3b4048;
+  font-weight: bold;
+}
+
+.deposit_slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 12px;
+}
+
+.slider_con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  height: 35px;
+  margin: 30px 0;
+}
+
+.slider_con div {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #29c359;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  padding: 12px;
+  padding-right: 0px;
+}
+
+.slider_con > input[type="number"] {
+  width: 80px;
+  border-radius: 3px;
+  border: none;
+  color: #3b4048;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  background-color: transparent;
+  border-radius: 3px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.slider_con > input[type="number"]:focus {
+  outline: none;
+}
+
+.slider_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_btn_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d3dce2;
+  color: #252525;
+  padding: 8px 15px;
+  border-radius: 2px;
+  flex-direction: column;
+  margin: 0px 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.slider_text {
+  font-size: 13px;
+  color: #252525;
+  opacity: 0.7;
+}
+
+.change_value {
+  display: flex;
+  font-weight: bold;
+}
+
+.total_style {
+  color: #fff;
+  background-olor: #252525;
+}
+
+.coinbase_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.coinbase {
+  height: 60px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.83);
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  aliign-items: center;
+  border-radius: 2px;
+}
+
+.coinbase > img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+  border: none;
+}
+
+.deposit_fees {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3px;
+  text-transform: uppercase;
+  background: #d3dce2;
+  color: #3b4048;
+  font-size: 12px;
+  border-radius: 2px;
+  border: none;
+}

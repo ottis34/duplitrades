@@ -1,0 +1,199 @@
+.gs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7rem 0;
+}
+
+.gs__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  gap: 1rem;
+}
+.gs__left {
+  width: 50%;
+  overflow-y: hidden;
+}
+
+.gs__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 4rem;
+}
+
+.gs__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+}
+
+.gs__head h2 {
+  font-size: 30px;
+  color: #00093a;
+}
+
+.gs__head p {
+  color: #00093a;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.gs__steps {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.gs__step {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.gs__number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.gs__number p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 20px;
+  font-weight: 650;
+  color: #fff;
+  background-color: #404e9d;
+}
+
+.gs__text {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.8rem;
+}
+
+.gs__text h3 {
+  font-size: 22px;
+  color: #00093a;
+  font-weight: 650;
+}
+
+.gs__text p {
+  color: #00093a;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.gs__account {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 68%;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.gs__account p {
+  font-size: 17px;
+  color: #404e9d;
+  font-weight: 500;
+}
+
+.gs__account hr {
+  width: 46%;
+  border-top: 1px dashed #404e9d;
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .gs__account hr {
+    width: 52%;
+    border-top: 1px dashed #404e9d;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gs__account hr {
+    width: 65%;
+    border-top: 1px dashed #404e9d;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gs__account hr {
+    width: 85%;
+    border-top: 1px dashed #404e9d;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gs__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+  }
+  .gs__left {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .gs__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+  }
+  .gs__account hr {
+    width: 55%;
+    border-top: 1px dashed #404e9d;
+  }
+  .gs__step {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .gs__account hr {
+    width: 85%;
+    border-top: 1px dashed #404e9d;
+  }
+}

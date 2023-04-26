@@ -1,0 +1,26 @@
+.rotate__main {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lavender;
+}
+.rotate__con {
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rotate__con > img {
+  width: 300px;
+}
+
+.rotate__con > p {
+  font-size: 18px;
+}

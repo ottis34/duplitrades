@@ -1,0 +1,103 @@
+.profile_container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        font-size: 16px;
+        font-family: Trebuchet MS,Tahoma,Arial,sans-serif;
+}
+
+/* form container start */
+.profile_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 24px;
+}
+
+/* for all labels */
+label {
+     display: block;
+     font-weight: 500;
+     margin-bottom: 8px;
+     text-transform: uppercase;
+     font-size: 16px;
+}
+/* label end */
+
+/* for all input and select box */
+input,
+select,
+.form_left > input,
+.form_right > input {
+        width:  100%;
+        border-radius: 2px;
+        border: 1px solid #e1e3e6;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding: 10px 12px;
+        margin-bottom: 14px;
+}
+
+select {
+        background-color: #FFFFFF;
+}
+/* input and select end */
+
+/* left side of form */
+.form_left {
+        flex: 1;
+        width: 50%;
+}
+/* left side end */
+
+/* right side of form */
+.form_right {
+        flex: 1;
+        width: 50%;
+}
+/* right side end */
+
+/* form container end */
+
+/* footer start */
+.profileSet_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #ebebeb;
+        padding-top: 15px;
+        height: auto;
+}
+
+.profileSet_footer > a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #7a7d84;
+        cursor: pointer;
+}
+
+.profileSet_footer > input[type="submit"] {
+        cursor: pointer;
+        padding: 14px 21px;
+        color: #FFFFFF;
+        background: #ff7700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 5px 15px 0px #ff770052;
+        font-weight: 700;
+        border-radius: 3px;
+        font-size: 13px;
+        width: 20%;
+        border: none;
+}
+
+.profileSet_footer > input[type="submit"]:hover {
+    background: #fe8114;
+}
+/* footer end */

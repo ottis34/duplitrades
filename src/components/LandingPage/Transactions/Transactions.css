@@ -1,0 +1,290 @@
+.scroll-down {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+
+  border: 1px solid white;
+  width: 100%;
+}
+.scroll-down .trans__table {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  /* Starting position */
+  -moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-down 15s linear infinite;
+  -webkit-animation: scroll-down 15s linear infinite;
+  animation: scroll-down 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-down {
+  0% {
+    -moz-transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(100%);
+  }
+}
+@-webkit-keyframes scroll-down {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+  }
+}
+@keyframes scroll-down {
+  0% {
+    -moz-transform: translateY(-100%); /* Browser bug fix */
+    -webkit-transform: translateY(-100%); /* Browser bug fix */
+    transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(100%); /* Browser bug fix */
+    -webkit-transform: translateY(100%); /* Browser bug fix */
+    transform: translateY(100%);
+  }
+}
+
+.trans__status__confirmed {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+  background-color: #17a2b8;
+  border-radius: 1.5rem;
+  width: 70%;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.trans__status__pending {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+  background-color: #ffc107;
+  border-radius: 1.5rem;
+  width: 70%;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.trans__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.trans__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 2rem;
+}
+
+.trans__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.trans__head h2 {
+  font-size: 30px;
+  color: #00093a;
+}
+
+.trans__head p {
+  color: #00093a;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.trans__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+
+  width: 100%;
+}
+
+.trans__table table td,
+table th {
+  border-top: 1px solid #e0e3e7;
+  border-bottom: 1px solid #e0e3e7;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.7rem;
+  text-align: left;
+  font-size: 18px;
+  padding-right: 2rem;
+}
+
+.trans__table table > thead > tr > th {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  border-top: 1px solid #fff;
+}
+
+.trans__table table tr:nth-child(even) {
+  background-color: #fff;
+  color: #00093a;
+}
+
+.trans__table table tr:nth-child(odd) {
+  background-color: #fff;
+  color: #00093a;
+}
+
+.trans__table table tr:hover {
+  background-color: #fff;
+}
+
+.trans__table table th,
+tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #fff;
+  color: #00093a;
+}
+
+@media screen and (max-width: 1100px) {
+  .trans__table table td,
+  table th {
+    padding: 13px;
+
+    font-size: 13px;
+  }
+
+  table > thead > tr > th {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trans__table table td,
+  table th {
+    border-top: 1px solid #e0e3e7;
+    border-bottom: 1px solid #e0e3e7;
+    border-left: 0;
+    border-right: 0;
+    padding: 0.7rem;
+    text-align: left;
+    font-size: 12px;
+    padding-right: 0rem;
+  }
+
+  .trans__table table > thead > tr > th {
+    padding: 0.7rem;
+    text-align: left;
+    font-size: 13px;
+    border-top: 1px solid #fff;
+  }
+
+  .trans__table table tr:nth-child(even) {
+    background-color: #fff;
+    color: #00093a;
+  }
+
+  .trans__table table tr:nth-child(odd) {
+    background-color: #fff;
+    color: #00093a;
+  }
+
+  .trans__table table tr:hover {
+    background-color: #fff;
+  }
+
+  .trans__table table th,
+  tfoot td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #fff;
+    color: #00093a;
+  }
+  /* .trans__table table td,
+table th {
+ 
+} */
+
+  .trans__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .trans__head h2 {
+    font-size: 30px;
+    color: #00093a;
+  }
+
+  .trans__head p {
+    color: #00093a;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .trans__status__confirmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.2rem 0.4rem;
+    background-color: #17a2b8;
+    border-radius: 1.5rem;
+    width: 70%;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .trans__status__pending {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.1rem 0.3rem;
+    background-color: #ffc107;
+    border-radius: 1rem;
+    width: 70%;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    font-size: 11px;
+  }
+}

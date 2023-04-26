@@ -1,0 +1,140 @@
+.ac__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f8f9fc;
+  padding: 7rem 0;
+  padding-bottom: 11rem;
+}
+
+.ac__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.ac__cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: auto;
+  gap: 4rem;
+}
+
+.ac__text__p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ac__card {
+  background-color: #fff;
+  border: 1px solid #ecedf5;
+  border-radius: 1rem;
+  padding-top: 5rem;
+  /* padding-bottom: 10rem; */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.ac__card img {
+  width: 5rem;
+}
+
+.ac__card h3 {
+  font-size: 25px;
+  width: 60%;
+  color: #00093a;
+}
+
+.ac__card p {
+  color: #00093a;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.ac__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .ac__card {
+    background-color: #fff;
+    border: 1px solid #ecedf5;
+    border-radius: 1rem;
+    padding-top: 5rem;
+    /* padding-bottom: 10rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 45rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+
+  .ac__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  .ac__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .ac__cards {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: auto;
+    gap: 4rem;
+  }
+
+  .ac__card {
+    background-color: #fff;
+    border: 1px solid #ecedf5;
+    border-radius: 1rem;
+    padding-top: 5rem;
+    /* padding-bottom: 10rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 40rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
