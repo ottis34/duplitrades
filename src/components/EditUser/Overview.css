@@ -1,0 +1,242 @@
+/* overviewe styling start */
+.overview_con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+}
+
+.overview_card {
+  width: 775px;
+  height: 480px;
+  max-height: 90vh;
+  background: #f4f6f9;
+  font-size: 16px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px #0000001a;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview_header {
+  height: auto;
+  background-color: #fff;
+  font-size: 14px;
+  box-shadow: 0px 2px 3px 0px #0000001c;
+  color: #575859;
+}
+
+.overview_header > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overview_header > ul > li {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  flex: 1;
+}
+
+.overview_header > ul > li:hover {
+  background-color: #f4f6f9;
+}
+
+.overview_header_select {
+  background-color: #f4f6f9;
+  border-bottom: 2px solid #ff7700;
+}
+
+.overview_back {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.overview_back > p {
+  font-size: 1.2rem;
+}
+
+.overview_back :hover {
+  opacity: 0.6;
+}
+/* overview styling end */
+
+.overview_main_con {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.footer_img {
+  width: 10px;
+  height: auto;
+}
+/* overview details styling start */
+.details_section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details_left,
+.details_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.details_left label,
+.details_right label {
+  font-size: 14px;
+  color: #0078c3;
+}
+
+.details_left div,
+.details_right div {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-style: italic;
+  color: #575859;
+}
+
+.balance_btn {
+  background-color: #29c359;
+  padding: 10px 12px;
+  border-radius: 3px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mod_bal {
+  font-size: 19px;
+}
+
+.avail_bal {
+  opacity: 0.5;
+  font-size: 12px;
+}
+/* overview details styling end */
+
+/* user settings styling start */
+.user_section {
+  font-size: 16px;
+}
+
+.user_section > form {
+}
+
+.user_section > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+}
+
+.user_section > form > fieldset > legend {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #575859;
+}
+
+.user_section > form > fieldset > input {
+  width: 50%;
+}
+
+.user_section > form > fieldset > input:focus {
+  outline: none;
+}
+
+.user_btn {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.user_btn > input {
+  color: #fff;
+  font-weight: 700;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  width: 30%;
+}
+
+.mod_bal_btns {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.mod_bal_btns > input {
+  width: 30%;
+  border-radius: 3px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+
+.mod_bal_btns .green {
+  background-color: #29c359;
+}
+
+.mod_bal_btns .red {
+  background-color: red;
+}
+/* user settings styling end */
+
+/* transaction history styling start */
+.transac_section {
+}
+
+.transac_card > table {
+  width: 100%;
+}
+
+.credit_tranc {
+  color: #29c359;
+}
+
+.debit_tranc {
+  color: red;
+}
+
+.no_tran {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* transaction history styling end */
