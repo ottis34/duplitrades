@@ -63,22 +63,9 @@ const Overview = ({ userEmail, setU1 }) => {
           {tr && <Transactions userEmail={userEmail} />}
         </div>
 
-        <div className="overview_back">
-          <MdOutlineArrowBackIos
-            onClick={() => {
-              setU1(false);
-            }}
-            color="red"
-            size={50}
-            style={{ cursor: "pointer" }}
-          />{" "}
-          <p
-            onClick={() => {
-              setU1(false);
-            }}
-          >
-            Back
-          </p>
+        <div className="overview_back" onClick={() => {setU1(false);}}>
+          <MdOutlineArrowBackIos color="#7a7d84" size={20} />
+          Back
         </div>
       </div>
     </div>

@@ -168,6 +168,35 @@ const UserSettings = ({ userEmail }) => {
     console.log("Form data");
   };
 
+  const deleteUser = async (e) => {
+    e.preventDefault();
+    alert("This action cnnot be undone");
+    await axios
+      .post(
+        "https://duplitrades-server.onrender.com/pent/admin/deleteUser/",
+        {
+          email: userEmail,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${cookies.userToken}`,
+          },
+        }
+      )
+      .then((res) => {
+        alert("User Deleted");
+        window.location.href = "/admin";
+        console.log(res);
+      })
+      .catch((err) => {
+        alert("Error Occured");
+        console.log(err);
+      });
+
+    console.log("Form data");
+  };
+
   return (
     <div className="user_section">
       <form>
@@ -182,8 +211,18 @@ const UserSettings = ({ userEmail }) => {
           />
 
           <div className="mod_bal_btns">
-            <input onClick={addFund} value="Add" className="green" />
-            <input onClick={removeFund} value="Subtract" className="red" />
+            <input
+              type="button"
+              onClick={addFund}
+              value="Add"
+              className="green"
+            />
+            <input
+              type="button"
+              onClick={removeFund}
+              value="Subtract"
+              className="red"
+            />
           </div>
         </fieldset>
 
@@ -196,7 +235,7 @@ const UserSettings = ({ userEmail }) => {
           />
 
           <div className="user_btn">
-            <input onClick={changePassword} value="Change" />
+            <input type="button" onClick={changePassword} value="Change" />
           </div>
         </fieldset>
 
@@ -209,9 +248,21 @@ const UserSettings = ({ userEmail }) => {
           />
 
           <div className="user_btn">
-            <input onClick={changeUserName} value="Change" />
+            <input
+              type="button"
+              onClick={changeUserName}
+              className="user_input"
+              value="Change"
+            />
           </div>
         </fieldset>
+
+        <input
+          type="button"
+          onClick={deleteUser}
+          className="delete_user red"
+          value="Delete this user!"
+        />
       </form>
     </div>
   );

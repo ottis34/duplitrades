@@ -56,15 +56,15 @@ const OverviewDetails = ({ userEmail, setO1, setTR, setUS }) => {
     <div className="details_con">
       <div className="details_section">
         <div className="details_left">
-          <label>fullname</label>
+          <label>fullname:</label>
           <div>{userData?.fullName}</div>
 
-          <label>email</label>
+          <label>email:</label>
           <div>{userData?.email}</div>
         </div>
 
         <div className="details_right">
-          <label>Account creation date</label>
+          <label>Account creation date:</label>
           <div>{new Date(userData?.createdAt).toLocaleDateString()}</div>
         </div>
       </div>
@@ -79,7 +79,7 @@ const OverviewDetails = ({ userEmail, setO1, setTR, setUS }) => {
       >
         <div className="mod_bal">modify balance</div>
 
-        <div>${userData?.amount}.00</div>
+        <div className="bal">${userData?.amount}.00</div>
 
         <div className="avail_bal">available balance</div>
       </div>
