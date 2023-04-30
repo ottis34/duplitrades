@@ -11,7 +11,7 @@ const Credit = ({ setCR, setD1 }) => {
       <img src={real} alt="" />
       <div className="addfunds_text">real account</div>
 
-      <div className="acc_bal">${user?.amount}.00</div>
+      <div className="acc_bal">${user?.amount}</div>
 
       <div
         className="addfunds_btn"

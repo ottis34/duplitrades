@@ -29,7 +29,7 @@ const Deposit = ({ setCR }) => {
             type: "Deposit",
             redirect_url:
               "https://duplitrades-server.onrender.compent/user/fundAccount",
-            cancel_url: "http://localhost:3000",
+            cancel_url: "https://duplitrades.com/",
           },
         },
         {
@@ -42,7 +42,7 @@ const Deposit = ({ setCR }) => {
       .then((res) => {
         console.log(res.data.hosted_url);
         console.log(user?._id);
-        window.open(`${res.data.hosted_url}`, "_blank");
+        window.location.href = `${res.data.hosted_url}`;
       })
       .catch((err) => {
         console.log(err);
@@ -100,7 +100,7 @@ const Deposit = ({ setCR }) => {
 
               <div className="change_value">
                 <div className="currency">$</div>
-                <div className="btn_total">20.50</div>
+                <div className="btn_total">{amount + (amount * 2.5) / 100}</div>
               </div>
             </div>
           </div>
